@@ -9,7 +9,7 @@ public class Looping {
 		// loop.reversePrintingANumber(no);
 		// loop.countOfDigits(no);
 		// int sumRes = loop.sumOfDigits(no);
-		int rev1Res = loop.neonNumber(no);
+		int rev1Res = loop.amstrongNumber(no);
 		int rev = loop.reverseTheNumber(no);
 		int res = loop.strong(no);
 		if (res == no) {
@@ -23,9 +23,9 @@ public class Looping {
 			System.out.println("The given number (" + no + ") is: Not Polindrome");
 		}
 		if (rev1Res == no) {
-			System.out.println("The given number (" + no + ") is: Neon Number");
+			System.out.println("The given number (" + no + ") is: Amstrong Number");
 		} else {
-			System.out.println("The given number (" + no + ") is: Not Neon Number");
+			System.out.println("The given number (" + no + ") is: Not Amstrong Number");
 		}
 
 		// System.out.println("12345 Reverse the number is: " + rev);
@@ -79,7 +79,7 @@ public class Looping {
 		return result;
 	}
 
-	int neonNumber(int no) {
+	int amstrongNumber(int no) {
 		int rev1Res = 0;
 		while (no > 0) {
 			int rem = no % 10;
